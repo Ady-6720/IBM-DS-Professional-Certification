@@ -1,0 +1,15 @@
+Accessing and Reading files using Python
+  file1=open("PATH","MODE")
+  ^           ^        ^
+  |           |        |
+  |       File Path    |
+  File Object       Mode of file access----->r=read | w=write
+  
+  with----> With is commonly used as it closes file automatically after execution
+    Syntax---->
+          with open("Path","Mode")as file1:
+             file_stuff=file1.read()---------------> Read the file and store contents in "file_stuff" variable
+             print(file_stuff)
+          print(file1.closed)
+          print(file_stuff)
+            
